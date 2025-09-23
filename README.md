@@ -31,7 +31,7 @@
 - p021-distancia-entre-puntos.py
 - p022-resistencia-equivalente-paralelo.py
 
-## programas hechos en la clase
+## Actividad 4 - Actividad de clase
 - p023-verificar-numero.py
 - p024-verificar-numero-v2.py
 - p025-verificar-suma.py
@@ -40,5 +40,11 @@
 - p028-retira-cuenta.py
 - p029-calculadora-descuento.py
 
-
+## Actividad 5 - Actividad de clase
+- p030-verifica-suma.py
+- p031-2da-ley-de-newton.py
+- p032-aceptar-estudiante.py
+- p033-aceptar-estudiante-v2.py
+- p034-tipo-angulo.py
+- p035-tipo-triangulo.py
 
