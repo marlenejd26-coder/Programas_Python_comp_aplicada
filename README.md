@@ -48,3 +48,13 @@
 - p034-tipo-angulo.py
 - p035-tipo-triangulo.py
 
+## Actividad 6 - Programas hechos en clase
+- p036-conteo-ascendente.py
+- p037-conteo-ascendente-v2.py
+- p038-conteo-descendente.py
+- p039-conteo-descendente-v2.py
+- p040-multiplos-continue.py
+- p041-sumar-consecutivos.py
+- p042-conteo-numeros.py
+- p043-adivina-numero.py
+
