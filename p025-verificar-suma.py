@@ -1,5 +1,5 @@
 # 025-verificar-suma.py
-# Objetivo: Verificar si la suma de dos números es igual a un tercero
+# Objetivo:verificar si la suma de dos números es igual a un tercero
 
 print ("-"*60)
 print ("Verificar si la suma de dos números es igual a un tercero ")

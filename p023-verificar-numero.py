@@ -1,5 +1,5 @@
 # p023-verificar-numero.py
-# Objetivo: verifica si un número es positivo, negativo o cero
+# Objetivo:verifica si un número es positivo, negativo o cero
 
 print("verificando si un numero es positivo, negativo o cero")
 

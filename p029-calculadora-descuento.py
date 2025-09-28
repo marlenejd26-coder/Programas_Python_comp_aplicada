@@ -1,5 +1,5 @@
 #p029-calculadora-descuento.py
-#Simula una calculadora de descuentos en base al monto de compra
+#Objetivo: simula una calculadora de descuentos en base al monto de compra
 
 compra=descuento=porcentaje=0 #En python se pueden declarar varias variables a la vez
 

@@ -1,5 +1,5 @@
 # p028-retira-cuenta.py
-# Objetivo: Simula el retiro de dinero de una cuenta de ahorros revisa el saldo
+# Objetivo:simula el retiro de dinero de una cuenta de ahorros revisa el saldo
 
 saldo_actual = 15000.00
 print ("Simulacro de retiro")

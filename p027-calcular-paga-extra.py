@@ -1,5 +1,5 @@
 # p027-calcular-paga-extra.py
-# Objetivo: Calcula la paga de un trabajador, considerando las horas extras (se pagan al doble)
+# Objetivo:calcula la paga de un trabajador, considerando las horas extras (se pagan al doble)
 
 print("\033[2J\033[H")
 print("Calculando la paga extra de un trabajador")

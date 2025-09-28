@@ -1,5 +1,5 @@
 # p026–convertir-temperaturas-v2.py
-# Objetivo: Convertir temperaturas de grados Celcius a Farenheit y viceversa 
+# Objetivo:convertir temperaturas de grados Celcius a Farenheit y viceversa 
 
 #Secuencias de escape ANSI se usan para enviar instrucciones la siguiente indica borra la pantalla
 
