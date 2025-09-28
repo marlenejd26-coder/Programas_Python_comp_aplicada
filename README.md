@@ -21,7 +21,7 @@
 - p013-funciones-matematicas-precios.py 
 - p014-funciones-trigonometricas.py
 
-## Tarea 1
+## Tarea 1 - Elementos básicos
 - p015-hipotenusa-triangulo.py
 - p016-tercer-angulo.py
 - p017-convertir-temperatura.py
