@@ -1,0 +1,28 @@
+# p041-aceptar-estudiante-v2
+# Objetivo: Indicar si un estudiante es aceptado evaluando sus datos de entrada
+
+print("--- Universidad Kitty Kat SA ---")
+
+nombre = input("Ingresa tu nombre: ")
+sexo = input ("Ingresa tu sexo h/m: ")
+edad = int(input("Ingresa tu edad: "))
+print ("Ingresa 3 calificaciones: ")
+c1 = float(input("Calificación 1: "))
+c2 = float(input("Calificación 2: "))
+c3 = float(input("Calificación 3: "))
+
+promedio = (c1+c2+c3)/3
+
+# Primer nivel: verificar sexo
+if sexo == "m":
+    #segundo nivel: verificar edad
+    if edad >= 21:
+        #tercer nivel: verificar promedio
+        if promedio >= 8:
+            print(f" ¡Felicidades {nombre}! Has sido aceptada, cumples con la edad y tu promedio de {promedio:.2f} esta dentro del rango permitido.")
+        else:
+            print(f" Lo sentimos, {nombre}. Tu promedio de {promedio:.2f} no alcanza el mínimo requerido de 8.")
+    else: 
+        print(f" Lo sentimos, {nombre}. No cumples con la edad requerida (mayores de 21 años).")   
+else: 
+    print(f" Lo sentimos {nombre}. La universidad solo acepta mujeres.")
