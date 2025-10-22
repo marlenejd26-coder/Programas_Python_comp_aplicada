@@ -1,9 +1,8 @@
 # p099-procesar-notas.py
 # Objetivo: Leer un numero indeterminado de notas en un rango entre 0 y 100
-#Procesa calificaciones en un alumno, usando una lista
 
 print('\033[H\033[J')
-print('Procesar las calificaciones de un alumno\n')
+print('Leer un numero indeterminado de notas en un rango entre 0 y 100\n')
 
 calificaciones = []
 
@@ -11,7 +10,7 @@ while True:
     try:
         cal = float(input("Calificación > "))
         if cal == 99: break
-        if 0 <= cal <= 10:
+        if 0 <= cal <= 100:
             calificaciones.append(cal)
         else:
             print("Calificación no valida")
