@@ -1,28 +1,23 @@
 # p103-ciudades.py
+# Objetivo: Leer nombres de ciudades en una lista, continuando hasta que el usuario introduzca el carácter $
 
-# Objetivo: Cifra un mensaje usando el Cifrado César.
+print('\033[H\033[J')
+print('Leer nombres de ciudades en una lista, continuando hasta que el usuario introduzca el carácter $')
 
+ciudades = []
 while True:
-    print('\033[H\033[J')
-    print('Encriptador con Cifrado César')
-    
-    mensaje_original = input("Ingresa el mensaje a encriptar: ")
-    desplazamiento = int(input("Ingresa la clave de desplazamiento (un número): "))
-    mensaje_cifrado = ""
+    ciudad = input("Introduzca nombre de ciudad ($ para detener): ")
+    if ciudad == "$":
+        break
+    ciudades.append(ciudad)
 
-    for caracter in mensaje_original:
-        if caracter.isalpha(): # Solo ciframos las letras
-            codigo_ascii = ord(caracter)
-            # Verificamos si es mayúscula o minúscula para mantener el caso
-            base = ord('a') if caracter.islower() else ord('A')
-            # Aplicamos la fórmula del cifrado
-            codigo_nuevo = base + (codigo_ascii - base + desplazamiento) % 26
-            mensaje_cifrado += chr(codigo_nuevo)
-        else:
-            mensaje_cifrado += caracter # Los otros caracteres pasan igual
+lista_ordenada = sorted(ciudades, reverse=True)
+vocales = "aeiouAEIOU"
+ciudades_consonantes = [c for c in ciudades if c and c[0] not in vocales]
 
-    print(f"\nMensaje Original: {mensaje_original}")
-    print(f"Mensaje Cifrado: {mensaje_cifrado}")
-    if input('\n\n¿Deseas encriptar otro mensaje (S/N)? ').upper() == 'N':break
-
-print('\n¡Encriptación finalizada!')
+print(f"\n--- Resultados --- ")
+print(f"Total de ciudades introducidas: {len(ciudades)}")
+print(f"Lista completa de ciudades: {ciudades}")
+print(f"Lista ordenada descendente: {lista_ordenada}")
+print(f"Cantidad de ciudades que inician con consonante: {len(ciudades_consonantes)}")
+print(f"Ciudades que inician con consonante: {ciudades_consonantes}")

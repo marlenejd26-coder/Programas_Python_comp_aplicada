@@ -1,25 +1,17 @@
 # p100-listas-multiplica.py
-# Objetivo:
-
-# p089-agregar-lista.py
-# Objetivo: Agregar elementos a una lista
+# Objetivo: Crear una tercera lista multiplicando los elementos de dos listas.
 
 print('\033[H\033[J')
-print('Agregar elementos a una lista')
+print('Crear una tercera lista multiplicando los elementos de dos listas.')
 
-nums = [80.3, 12.5, 60.2, 30.4]
-print(f'Datos iniciales: {nums}\n')
+ListaA = [2, 4, 6, 8, 10]
+ListaB = [5, 1, 3, 7, 9]
+multiplicacion = []
 
-print(f'Agregar 90 y 100 al final:')
-nums.append(90)
-nums.append(100)
-print(f'Resultado : {nums}\n')
+for i in range(5):
+    multiplicacion.append (ListaA[i] * ListaB[i])
 
-print(f'Insertar 80 en la posición 4:')
-nums.insert(4, 80)
-print(f'Resultado : {nums}\n')
-
-print(f'Externder datos agregando [110, 120, 130] se agregan al final:')
-otros = [110, 120, 130]
-nums.extend(otros)
-print(f'Resultado : {nums}\n')
+print("\n--- Resultados ---")
+print(f"Lista A: {ListaA}")
+print(f"Lista B: {ListaB}")
+print(f"Lista C (A * B): {multiplicacion}")

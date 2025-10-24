@@ -1,21 +1,20 @@
 # p101-mes-día-nombre.py
-# 
+# Objetivo: Imprimir el nombre del mes y la cantidad de días del mes correspondiente
 
 print('\033[H\033[J')
-print(" Encontrar las acciones mas altas y mas baja en una semana")
+print("Imprimir el nombre del mes y la cantidad de días del mes correspondiente")
 
-dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado"]
-precios = [150.25, 152.50, 149.75, 155.00, 153.20, 100.00]
+mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Obtubre", "Noviembre", "Diciembre"]
+dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+num = int(input("Introduzca un número de mes (1-12): "))
 
-# Encontrar el precio máximo y mínimo y en que día
-precio_max = max(precios)
-precio_min = min(precios)
+if  1 <= num <= 12:
+    for i in range(12):
+        if i == num - 1:
+            print(f'Mes: {mes[i]}')
+            print(f'Días: {dias[i]}')
+else:
+    print("Mes inválido")
+    
 
-# Encontrar la posición (el día) de esos precios
-pos_max = precios.index(precio_max)
-pos_min = precios.index(precio_min)
 
-print(f"Precios de las acciones de la semana: {precios}")
-print(f"Días: {dias}")
-print(f"El precio más alto fue ${precio_max} el día {dias[pos_max]}.")
-print(f"El precio más bajo fue ${precio_min} el día {dias[pos_min]}.")

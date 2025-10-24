@@ -9,7 +9,7 @@ calificaciones = []
 while True:
     try:
         cal = float(input("Calificación > "))
-        if cal == 99: break
+        if cal == 0: break
         if 0 <= cal <= 100:
             calificaciones.append(cal)
         else:
@@ -22,16 +22,17 @@ if not calificaciones:
 else:
     suma = sum(calificaciones)
     promedio = suma / len(calificaciones)
-    mayores_promedio = []
+    menores_promedio = []
     for cal in calificaciones:
-        if cal > promedio: 
-            mayores_promedio.append(cal)
+        if cal < promedio: 
+            menores_promedio.append(cal)
 
-print(f"\nSe capturaron {len(calificaciones)} calificaciones.")
-print(f"Las calificaciones fueron: {calificaciones}")
-print("\n--- Estadísticas del Curso ---")
-print(f"Suma : {suma}")
-print(f"Promdio : {promedio}")
-print(f"Calificaciones mayores al promedio: {len(mayores_promedio)} y son {mayores_promedio}")
-print(f"Calificación más alta: {max(calificaciones)}")
-print(f"Calificación más baja: {min(calificaciones)}")
+print("\n--- Resultados ---")
+print(f"\nTotal de notas introducidad {len(calificaciones)}")
+print(f"Lista de notas {calificaciones}")
+print(f"Suma de notas: {suma}")
+print(f"Promdio de notas: {promedio}")
+print(f"Nota máxima: {max(calificaciones)}")
+print(f"Nota mínima: {min(calificaciones)}")
+print(f"Notas menores al promedio: {len(menores_promedio)}")
+print(f"Lista de notas menores al promedio: {menores_promedio}")

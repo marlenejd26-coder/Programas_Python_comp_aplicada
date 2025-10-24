@@ -1,34 +1,28 @@
 # p102-listas-aleatorios-suma.py
 # Objetivo: Crear una tercera lista a partir de las listas A y B
 
+import random #Para generar números aleatorios
 print('\033[H\033[J')
 print('Crear una tercera lista a partir de las listas A y B:\n')
 
-A = [2, 4, 6, 8, 10, 12, 14, 16]
-B = [2, 4, 6, 8, 10, 12, 14, 16]
-nums = [2, 4, 6, 8, 10, 12, 14, 16]
+MAX = 10
+lista_a = []
+lista_b = []
+lista_c = []
 
-print(f'Números a procesar: {nums}\n')
+for i in range(MAX): 
+    lista_a.append(random.randint(1, 100)) # Llena la lista del sensor A
+    lista_b.append(random.randint(1, 100)) # Llena la lista del sensor B
 
-print('1. Iteración por elemento:')
-for n in nums:
-    print(n, end=' ')
+for i in range(MAX):
+    lista_a.append(random.randint(1, 100)) # Llena la lista del sensor A
+    lista_b.append(random.randint(1, 100)) # Llena la lista del sensor B
+    if lista_a[i] % 2 != 0 and lista_b[i] % 2 != 0:
+        lista_c.append(lista_a[i] + lista_b[i])
+    else:
+        lista_c.append(0)
 
-print('\n\n2. Iteración por índice:')
-for i in range(len(nums)):
-    print(nums[i], end=' ')
-
-print('\n\n3. Iteración por elemento para sumar 2')
-for n in nums: 
-    n + 2
-    print(n, end=' ')
-
-print('\n\n4. Iteración por índice para sumar 10')
-for i in range(len(nums)):
-    nums[i] += 10
-    print(nums[i], end=' ')
-
-print('\n\n5. Iteración con enumerate')
-print('Pos\tValor')
-for i, n in enumerate(nums):
-    print(i,'\t', n,)
+print("\n--- Resultados (Suma solo si A[i] y B[i] son ambos impares) ---")
+print(f"Lista A: {lista_a}")
+print(f"Lista B: {lista_b}")
+print(f"Lista C: {lista_c}")

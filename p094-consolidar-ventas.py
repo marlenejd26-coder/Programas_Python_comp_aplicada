@@ -17,7 +17,7 @@ for i in range(ventas):
     ventas1.append(venta)
 
 # Leer datos de la Sucursal 2
-print('\n Dame las ventas de la primera sucursal 1:')
+print('\n Dame las ventas de la segunda sucursal 1:')
 for i in range(ventas):
     venta = int(input(f'Venta del día {i+1} ? ')) # Es para que no se muestre desde la posición 0
     ventas2.append(venta)
