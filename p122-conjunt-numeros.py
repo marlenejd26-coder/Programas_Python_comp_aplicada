@@ -1,5 +1,5 @@
 # p122-operaciones-conjuntos.py
-# Objetivo: Operaciones entre conjuntos
+# Objetivo: Operaciones entre conjuntos.
 
 c1 = {1, 2, 3, 4, 5}
 c2 = {5, 6, 7, 8, 9, 10}

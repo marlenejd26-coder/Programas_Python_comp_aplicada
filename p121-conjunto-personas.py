@@ -1,5 +1,5 @@
 # p121-municipios.py
-# Objetivo: Gestion de un padrón municipal
+# Objetivo: Gestion de un padrón municipal.
 
 municipios = {'Zacatecas', 'Guadalupe', 'Jerez', 'Fresnillo', 'Fresnillo'}
 

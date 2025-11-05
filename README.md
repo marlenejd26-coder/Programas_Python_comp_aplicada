@@ -164,6 +164,6 @@
 - p119-procesar-diccionario.py
 - p120-contar-caracteres.py
 
-# Tarea 7 - Conjuntos
-- p121-conjunto-personas.py
-- p122-conjunt-numeros.py
+# Actividad 15 - Conjuntos
+- p121-municipios.py
+- p122-operaciones-conjuntos.py
