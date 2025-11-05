@@ -165,5 +165,5 @@
 - p120-contar-caracteres.py
 
 # Tarea 7 - Conjuntos
-- p123-conjunto-personas.py
-- p124-conjunt-numeros.py
+- p121-conjunto-personas.py
+- p122-conjunt-numeros.py
