@@ -172,5 +172,22 @@
 - p123-conjunto-personas.py
 - p124-conjunto-numeros.py
 
-# Segundo Examen Parcial
+# SEGUNDO EXAMEN PARCIAL
 - p125-segundo-examen-parcial.py
+
+# Actividad 16 - Funciones - Parte 1
+- p126-funcion-simple.py
+- p127-funcion-parametro.py
+- p128-funcion-parametros.py
+- p129-func-param-nombre.py
+- p130-func-param-defecto.py
+- p131-func-mas-param.py
+- p132-funcion-retorno.py
+- p133-tabla-multiplicar.py
+- p134-cuadro-caracter.py
+- p135-numero-mayor.py
+- p136-estacion-año.py
+- p137-temperatura.py
+- p138-suma-digitos.py
+- p139-factorial.py
+- p140-promedio-letra.py
