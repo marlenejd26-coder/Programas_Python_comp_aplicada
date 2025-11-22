@@ -1,7 +1,6 @@
 # p146-pares-impares.py
-# Objetivo: Funcion que regresa los pares e impares de una lista
 
-from typing import List, Tuple #Para regresar dos valores
+from typing import List, Tuple 
 
 def lista_pares_impares(lista:List[int]) -> Tuple[ List[int], List[int] ]:
     pares : List[int] = []
